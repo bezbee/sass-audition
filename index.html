@@ -1,37 +1,47 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <title>Front End Audition</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Front End Audition</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="dist/audition.css">
+    <link rel="stylesheet" href="dist/audition.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <meta name="theme-color" content="#fafafa">
+  </head>
 
-<body>
+  <body>
 
-  <!-- Add your site or application content here -->
-  <div class="container">
+    <!-- Add your site or application content here -->
+    <div class="container">
 
-    <div class="row">
-      <div class="col">
-        <section>
-          <div>
-            <p>Great! Your registry is published and ready to be shared.</p>
-            <a href="/">Share</a>
-            <a href="/">Preview</a>
-            <a href="/">Edit</a>
-          </div>
-        </section>
+      <div class="row">
+        <div class="col">
+          <section>
+            <div class="rounded d-flex flex-column flex-md-row flex-md-wrap flex-lg-nowrap justify-content-md-center align-items-md-center">
+              <p class="text-center d-lg-none">
+                <span class="font-weight-bold">Great!</span>Your registry is published and ready to be shared.</p>
+              <p class="d-none d-lg-block">
+                <span class="badge">!</span>
+                <span class="font-weight-bold">You're almost there!</span>
+                <a href="/">Add payment settings</a>
+                and you're ready to share.
+              </p>
+              <a href="/" class="btn btn-primary btn-lg d-none d-lg-block" role="button">Add payment</a>
+              <a href="/" class="btn btn-primary btn-lg d-lg-none" role="button">Share</a>
+              <a href="/" class="btn btn-outline-primary btn-lg" role="button">Preview</a>
+              <a href="/" class="btn btn-outline-primary btn-lg" role="button">Edit</a>
+            </div>
+          </section>
+        </div>
       </div>
+
     </div>
 
-  </div>
-
-</body>
+  </body>
 
 </html>

@@ -1,3 +1,92 @@
 // Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
 
+$primary-blue: #5b9bfb;
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+section div {
+  font-size: smaller;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  @include media-breakpoint-only(md) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+p {
+  padding: 0 40px;
+  @include media-breakpoint-only(md) {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 0;
+    font-size: 14px;
+  }
+}
+
+p span {
+  padding-right: 10px;
+  @include media-breakpoint-up(lg) {
+    padding-right: 5px;
+  }
+}
+
+p a {
+  text-decoration: underline;
+}
+
+span.badge {
+  padding: 0.2em 0.5em;
+  font-size: 200%;
+  vertical-align: middle;
+  background-color: orange;
+  color: white;
+  margin-right: 10px;
+}
+
+a.btn {
+  border-color: $primary-blue;
+  border-width: 2px;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  @include media-breakpoint-up(md) {
+    width: 150px;
+  }
+}
+
+a.btn.btn-primary {
+  background-color: $primary-blue;
+}
+
+a.btn:not(.btn-primary) {
+  color: $primary-blue;
+}
+
+a.btn:focus,
+a.btn:hover {
+  background-color: $primary-blue;
+  color: white;
+  opacity: 0.7;
+  border-color: $primary-blue;
+}
+
+a.btn:not(:last-of-type) {
+  margin-bottom: 10px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: unset;
+    margin-right: 20px;
+  }
+}
